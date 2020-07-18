@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="table">
+        <tr><th>Index</th><th>Name</th><th>Class</th><th>Action</th></tr>
+        <tr><td>0</td><td>Jhone</td><td>10</td><td><input type="button" value="Delete" onclick="del(this)"></td></tr>
+        <tr><td>1</td><td>JDoe</td><td>9</td><td><input type="button" value="Delete" onclick="del(this)"></td></tr>
+        <tr><td>2</td><td>Jho</td><td>8</td><td><input type="button" value="Delete" onclick="del(this)"></td></tr>
+        <tr><td>3</td><td>Jhe</td><td>7</td><td><input type="button" value="Delete" onclick="del(this)"></td></tr>
+        <tr><td>4</td><td>Jhee</td><td>6</td><td><input type="button" value="Delete" onclick="del(this)"></td></tr>
+        <tr><td>5</td><td>Umair</td><td>10</td><td><input type="button" value="Delete" onclick="del(this)"></td></tr>
+        <tr><td>6</td><td>Areeb</td><td>4</td><td><input type="button" value="Delete" onclick="del(this)"></td></tr>
+        <tr><td>7</td><td>Shah</td><td>10</td><td><input type="button" value="Delete" onclick="del(this)"></td></tr>
+        <tr><td>8</td><td>Goof</td><td>8</td><td><input type="button" value="Delete" onclick="del(this)"></td></tr>
+        <tr><td>9</td><td>Jhdd</td><td>6</td><td><input type="button" value="Delete" onclick="del(this)"></td></tr>
+        <tr><td>10</td><td>Jhone</td><td>7</td><td><input type="button" value="Delete" onclick="del(this)"></td></tr>
+    </table>
+    <script>
+        function del(deleteBtn){
+            var index=deleteBtn.parentNode.parentNode.rowIndex;
+            document.getElementById('table').deleteRow(index);
+        }
+    </script>
+</body>
+</html>

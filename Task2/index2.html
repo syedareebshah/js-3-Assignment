@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #images{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #images img{
+            width:250px;
+            height:350px;
+            border:1px solid lightblue;
+            cursor:pointer;
+        }
+        h1,div{
+            color:lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mobile Phone Lookup</h1>
+    <div id="images">
+    <div>
+    <img src="phone-img/Phone1.jpg" alt="phone-1" onclick="message()">
+    <div>Phone-1</div>
+    </div>
+    <div>
+    <img src="phone-img/Phone2.jpg" alt="phone-2" onclick="message()">
+    <div>Phone-2</div>
+    </div>
+    <div>
+    <img src="phone-img/Phone3.png" alt="phone-3" onclick="message()">
+    <div>Phone-3</div>
+    </div>
+    <div>
+    <img src="phone-img/Phone4.jpg" alt="phone-4" onclick="message()">
+    <div>Phone-4</div>
+    </div>
+    </div>
+    <script>
+        function message(){
+            alert('Thanks for purchasing phone for us')
+        }
+    </script>
+</body>
+</html>

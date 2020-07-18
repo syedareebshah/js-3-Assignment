@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ 
+        #container{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            height:60vh;
+            width:40%;
+            background-color:red;
+        }
+        #counter{
+            width:200px;
+            height: 20px;
+            border: 1px solid white;
+        }
+        #container div{
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="counter">
+            0
+        </div>
+        <div id="btn">
+            <span>
+                <button onclick="increment()">Increment</button>
+                <button onclick="decrement()">Decrement</button>
+            </span>
+        </div>
+    </div>
+    <script>
+        function increment(){
+            var val=document.getElementById('counter').innerHTML;
+            document.getElementById('counter').innerHTML=Number(val)+1;
+        }
+        function decrement(){
+            var val=document.getElementById('counter').innerHTML;
+            document.getElementById('counter').innerHTML=Number(val)-1;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height:96vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="image">
+        <img src="./phone-img/Phone1.jpg" alt="Phone-1" onmouseover="setImage()" onmouseout="firstImage()" id='im'>
+    </div>
+    <script>
+        function setImage(){
+            document.getElementById("im").src="./phone-img/Phone2.jpg"
+        }
+        function firstImage(){
+            document.getElementById("im").src="./phone-img/Phone1.jpg"
+        }
+    </script>
+</body>
+</html>
